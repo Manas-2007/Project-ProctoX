@@ -28,31 +28,27 @@ const Footer = () => {
       <div className="pointer-events-none absolute -bottom-40 -right-20 h-80 w-80 rounded-full bg-cyan-400/10 blur-3xl" />
 
       <div className="relative mx-auto max-w-7xl px-6 py-8 sm:px-8 lg:px-10 lg:py-10">
-
         {/* Main Footer Content */}
         <div className="grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-[1.4fr_1fr_1fr_1.2fr]">
 
-          {/* Brand */}
+          {/* ================= BRAND ================= */}
           <div className="col-span-2 lg:col-span-1">
             <a
               href="#home"
-              className="inline-flex items-center gap-3"
+              className="group inline-flex items-center gap-3"
             >
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl border border-blue-400/20 bg-blue-500/10">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  className="h-8 w-8 text-blue-400"
-                  stroke="currentColor"
-                  strokeWidth="1.8"
-                >
-                  <path d="M12 3L19 6V11.5C19 16 16.3 19.4 12 21C7.7 19.4 5 16 5 11.5V6L12 3Z" />
-                  <path d="M9 12L11 14L15 10" />
-                </svg>
+              {/* Logo */}
+              <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-xl border border-blue-400/20 bg-blue-500/10">
+                <img
+                  src="/Logo.png"
+                  alt="ProctoX Logo"
+                  className="h-full w-full object-contain p-1"
+                />
               </div>
 
+              {/* Name */}
               <span className="text-3xl font-bold tracking-tight">
-                ETECH
+                ProctoX
               </span>
             </a>
 
@@ -63,9 +59,13 @@ const Footer = () => {
               <span className="mx-2 text-blue-400">•</span>
               Future-Ready
             </p>
+
+            <p className="mt-3 max-w-xs text-xs leading-5 text-blue-100/50">
+              AI-assisted security for trustworthy digital examinations.
+            </p>
           </div>
 
-          {/* Quick Links */}
+          {/* ================= QUICK LINKS ================= */}
           <div>
             <h3 className="mb-5 text-sm font-semibold text-white">
               Quick Links
@@ -85,7 +85,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Support */}
+          {/* ================= SUPPORT ================= */}
           <div>
             <h3 className="mb-5 text-sm font-semibold text-white">
               Support
@@ -105,7 +105,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Stay Connected */}
+          {/* ================= STAY CONNECTED ================= */}
           <div className="col-span-2 lg:col-span-1">
             <h3 className="mb-5 text-sm font-semibold text-white">
               Stay Connected
@@ -135,8 +135,9 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="flex flex-col items-start gap-4 text-xs text-blue-100/50 sm:flex-row sm:items-center sm:justify-between">
+
           <p>
-            © 2026 ETECH. All rights reserved.
+            © 2026 ProctoX. All rights reserved.
           </p>
 
           <div className="flex flex-wrap items-center gap-4 sm:gap-5">
